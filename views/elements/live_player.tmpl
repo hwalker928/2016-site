@@ -2,10 +2,11 @@
 
 <div id="live-player-popout">
   <div id="live-player-popout-controls">
-    <a href="//ury.org.uk/live/" onclick="window.open('//ury.org.uk/live', 'radioplayer', 'height=800,width=440'); window.livePlayer.pause(); return false;"><i aria-label="pop out player" class="fas fa-external-link-alt"></i></a>
-
+    <a href="//ury.org.uk/live/" onclick="window.open('//ury.org.uk/live', 'radioplayer', 'height=800,width=440'); window.livePlayer.pause(); return false;">
+      <i aria-label="open pop-out player" class="fas fa-external-link-alt"></i>
+    </a>
     <button id="live-player-close">
-      <i class="fa fa-times"></i>
+      <i class="fa fa-times" aria-label="close player"></i>
     </button>
   </div>
 
@@ -19,11 +20,13 @@
           </p>
       </div>
 
-      <div class="control-seg">
+      <div class="control-seg button-seg">
         <button class="p-4 play-pause-button" id="live-player-play">
           <i class="fa fa-play"></i>
         </button>
+      </div>
 
+      <div class="control-seg">
         <div class="live-player-volume-cont">
             <i class="fas fa-volume-off"></i>
             <input type="range" min="0" max="11" step="1" name="volume" id="live-player-volume">

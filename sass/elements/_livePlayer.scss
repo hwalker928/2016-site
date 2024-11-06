@@ -25,7 +25,7 @@
 }
 
 .current-and-next-player:last-of-type{
-  background-color: #dcdee0cc !important;
+    background-color: #dcdee0cc !important;
 }
 
 .live-container {
@@ -39,9 +39,11 @@
     flex-direction: row;
     gap: 2rem;
     align-items: center;
-    &:first-of-type {
-        justify-content: flex-end;
-    }
+}
+
+.control-seg.button-seg {
+    flex: unset;
+    width: unset;
 }
 
 .live-player-volume-cont {
@@ -54,6 +56,12 @@
 .live-now-playing p {
     margin: 0;
     font-size: large;
+}
+
+@include media-breakpoint-up(sm) {
+    .live-container {
+        margin-inline: 4rem;
+    }
 }
 
 @include media-breakpoint-down(sm) {
