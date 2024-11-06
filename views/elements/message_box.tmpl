@@ -32,13 +32,23 @@
       messageInput.disabled = false;
       sendButton.disabled = false;
       sendButton.innerText = 'Sent!';
+
+      sendButton.classList.remove("btn-primary");
+      sendButton.classList.add("btn-success");
+
+      if (res.ok) {
+        messageInput.value = '';
+        updateMessageboxCharacterCount();
+      }
       setTimeout(() => {
         if (sendButton.innerText === 'Sent!') {
           sendButton.innerText = 'Send Message';
         }
+
+        sendButton.classList.remove("btn-success");
+        sendButton.classList.add("btn-primary");
       }, 1000);
     });
-    messageInput.value = '';
     messageInput.disabled = true;
     sendButton.disabled = true;
     sendButton.innerText = 'Sending...';

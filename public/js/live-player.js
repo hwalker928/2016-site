@@ -89,7 +89,6 @@ export function makePlayer(config) {
 
         pause() {
             if (playbackError) {
-                console.error('playback error');
                 return;
             }
             if (nowPlayingUpdate) {
@@ -134,7 +133,6 @@ export function makePlayer(config) {
 
     player.addEventListener('ended', () => {
         if (playbackError) return;
-        console.log('retrying load');
         player.load();
     });
 
@@ -157,7 +155,6 @@ export function makePlayer(config) {
     });
 
     window.onbeforeunload = () => {
-        console.log('before unload');
         if (playbackControls.playing) {
             return '';
         }
