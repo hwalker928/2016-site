@@ -18,14 +18,14 @@
     {{else}}
     <div class="current-and-next-now p-2 px-3 p-sm-3 p-lg-4">
     {{end}}
-    <h2 class="font-weight-bold">Live now:</h2>
+    <h2 class="font-weight-bold">live now:</h2>
     {{template "current_next" .Current}}
     {{if .Current.Url}}
     </a>
     {{else}}
     </div>
     {{end}}
-    <a href="https://ury.org.uk/listen" class="btn btn-red listen-btn listen-btn-animated mobile-hide" title="Listen Live" onclick="window.open('//ury.org.uk/live', 'radioplayer', 'height=800,width=440'); return false;"><i class="fa fa-volume-up mr-2"></i>Listen Live</a>
+    <a href="https://ury.org.uk/listen" class="btn btn-red listen-btn listen-btn-animated mobile-hide" title="Listen Live" onclick="window.open('//ury.org.uk/live', 'radioplayer', 'height=800,width=440'); return false;"><i class="fa fa-volume-up mr-2"></i>listen live</a>
   </div>
   {{end}}
   {{if .Next}}
@@ -35,7 +35,7 @@
     {{else}}
     <div class="current-and-next-next p-3 p-lg-4">
     {{end}}
-    <h2 class="font-weight-bold">Up next:</h2>
+    <h2 class="font-weight-bold">up next:</h2>
     {{template "current_next" .Next}}
     {{if .Next.Url}}
     </a>
@@ -45,7 +45,7 @@
   </div>
   {{end}}
   <div class="col-12 mobile-only p-0">
-    <a aria-hidden="true" href="https://ury.org.uk/listen" class="btn btn-lg btn-block btn-square btn-red listen-btn-mobile" title="Listen Live" onclick="window.open('//ury.org.uk/live', 'radioplayer'); return false;"><i class="fa fa-volume-up mr-2"></i>Listen Live</a>
+    <a aria-hidden="true" href="https://ury.org.uk/listen" class="btn btn-lg btn-block btn-square btn-red listen-btn-mobile" title="Listen Live" onclick="window.open('//ury.org.uk/live', 'radioplayer'); return false;"><i class="fa fa-volume-up mr-2"></i>listen live</a>
   </div>
 </div>
 {{end}}

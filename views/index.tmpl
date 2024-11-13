@@ -35,11 +35,11 @@
 
         </div>
         <div class="col-lg-5">
-          <h2>Get Involved</h2>
+          <h2>get involved</h2>
           <hr>
-          <p>University Radio York has been alive since 1968, when we became the first legal independent radio station in the UK!</p>
-          <p>Help us continue our legacy by joining the URY team.</p>
-          <p><a href="{{url "/getinvolved/"}}">find out more</a></p>
+          <p>university radio york has been alive since 1968, when we became the first legal independent radio station in the uk!</p>
+          <p>help us continue our legacy by joining the ury team.</p>
+          <p><a href="{{url "/getinvolved/"}}">FIND OUT MORE</a></p>
         </div>
       </div>
     </div>
@@ -47,14 +47,14 @@
   {{end}}
   {{if .PageContext.CIN}}
   <div id="index-videos" class="container-fluid container-padded pb-0 bg-cin">
-    <h2 class="cin-text">URY Candidate Interview Night</h2>
+    <h2 class="cin-text">ury candidate interview night</h2>
     <div id="cin-videos" class="row scroll-horiz pb-3 custom-scrollbar-cin thumbnail-slider">
     </div>
   </div>
   {{end}}
   {{with .PageData}}
 <div id="index-just-missed" class="container-fluid container-padded bg-primary pb-0">
-  <h2>You just missed...</h2>
+  <h2>you just missed...</h2>
   <div class="row custom-scrollbar scroll-horiz scroll-none-xl thumbnail-slider">
     {{range .Timeslots}}
     <div class="col-8 col-sm-7 col-md-4 col-lg-3 col-xl-2 p-3 thumbnail-container">
@@ -68,7 +68,7 @@
           " alt="{{.Title}} Logo"></div>
         <div class="ury-card-body">
           <div class="ury-card-title">{{.Title}}</div>
-          <span class="ury-card-date">{{.StartTime.Format "15:04 - Mon"}} • {{formatDuration .Duration}}</span>
+          <span class="ury-card-date">{{.StartTime.Format "15:04 - mon"}} • {{formatDuration .Duration}}</span>
         </div>
       </a>
     </div>
@@ -76,7 +76,7 @@
     <div class="col-8 col-sm-7 col-md-4 col-lg-3 col-xl-2 p-3 thumbnail-container">
       <a class="ury-card link" href="//mixcloud.com/ury1350/">
         <div class="ury-card-body">
-          <div class="ury-card-lg-title">See more on Mixcloud...</div>
+          <div class="ury-card-lg-title">see more on mixcloud...</div>
         </div>
       </a>
     </div>
@@ -86,7 +86,7 @@
   <div id="index-podcasts" class="container-fluid container-padded pb-0 bg-podcasts">
     <div class="row">
       <div class="col-12">
-        <h2>Latest Podcasts</h2>
+        <h2>latest podcasts</h2>
       </div>
     </div>
     <div class="row scroll-horiz custom-scrollbar thumbnail-slider">
@@ -104,7 +104,7 @@
           </div>
           <div class="ury-card-body">
             <div class="ury-card-title">{{.Title}}</div>
-            <span>{{.Time.Format "Monday, _2 Jan 2006"}}</span>
+            <span>{{.Time.Format "monday, _2 Jan 2006"}}</span>
           </div>
         </a>
       </div>
@@ -112,7 +112,7 @@
       <div class="col-8 col-sm-7 col-md-4 col-lg-3 col-xl-2 p-3 thumbnail-container">
         <a class="ury-card podcast link" href='{{url "/podcasts/"}}'>
           <div class="ury-card-body">
-            <div class="ury-card-lg-title">See all podcasts...</div>
+            <div class="ury-card-lg-title">see all podcasts...</div>
           </div>
         </a>
       </div>

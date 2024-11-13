@@ -1,23 +1,23 @@
 {{define "message_box"}}
 {{with .}}
-<h2>Send a Message</h2>
+<h2>send a message</h2>
 <hr>
 <form id="studiomessage" action="/" method="post">
   <textarea class="form-control" id="comments" name="message" rows="4" maxlength="1000" placeholder=
   {{if .MsgBoxError}}
-  	"Message cannot be sent at this time, please try again later."
+  	"message cannot be sent at this time, please try again later."
   {{else if not .ShowOnAir}}
-  	"No shows are on air right now, so there's no-one to send a message to." disabled
+  	"no shows are on air right now, so there's no-one to send a message to." disabled
   {{else}}
-  	"Why not send a message to the studio presenters? Thoughts, banter and song requests all go here!"
+  	"why not send a message to the studio presenters? thoughts, banter and song requests all go here!"
   {{end}}></textarea>
   <p id="charcount" class="text-muted my-1"></p>
-  <button id="messagesend"  class="btn btn-primary btn-block" type="submit" value="SEND MESSAGE"
+  <button id="messagesend"  class="btn btn-primary btn-block" type="submit" value="send message"
   {{if not .ShowOnAir}}
   	disabled
   {{end}}
-  >Send Message</button>
+  >send message</button>
 </form>
-<p class="pt-1 mb-0">You can also text on <a href="sms:+447851101313">07851 101 313</a></p>
+<p class="pt-1 mb-0">you can also text on <a href="sms:+447851101313">07851 101 313</a></p>
 {{end}}
 {{end}}
