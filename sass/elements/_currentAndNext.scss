@@ -13,9 +13,17 @@
     padding: calc(8em + 60px) 0 8em;
   }
 
-  .sra-2020-bug {
+  .sra-2024-bug {
     position: absolute;
     top: calc(1em + 60px);
+    left: 1em;
+    max-width: 90vw;
+    max-height: 54px;
+  }
+
+  .sra-2020-bug {
+    position: absolute;
+    top: calc(1em + 120px);
     left: 1em;
     max-width: 90vw;
     max-height: 54px;
